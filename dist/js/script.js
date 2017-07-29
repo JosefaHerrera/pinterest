@@ -12634,5 +12634,6 @@ var pinter =[{"id":1,"title":"Fuke zisukje bu dibas sik.","description":"Jusola 
 
 
     pinter.forEach(function(valorActual){
-    	document.write( "titulo: "+valorActual.title +"<br>" + "Descripcion: "+valorActual.description + "<br>" + "Nombre de usuario: " +valorActual.username + "<br>" + "<img src='img/" +valorActual.image_url +"'>" + "<br>")
+	$('#ftos').append("<div class='contenedor'>"+"<img src='img/" +valorActual.image_url +"'>" + "<h5>"+ valorActual.title +"</h5>"+"<span><i class='fa fa-thumb-tack' aria-hidden='true'></i> 36,6k <i class='fa fa-check' aria-hidden='true'></i> 6</span>"+"<br>"+"<p>"+valorActual.description+"</p>" + "<br>"+"<i class='fa fa-user-circle-o' aria-hidden='true'></i>"+valorActual.username +"| " +"#"+valorActual.hashtag+"</div>");
+    	
     });
