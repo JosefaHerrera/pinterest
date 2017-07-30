@@ -12662,7 +12662,9 @@ pinter.forEach(function(valorActual){
 			'<div class="modal-dialog" role="document"><div class="modal-content">'+
 		    '<div class="modal-header"><div class="headermodal"><a href="#"><i class="fa fa-upload" aria-hidden="true"></i></a><a href="#"><i class="fa fa-check" aria-hidden="true"></i></a><a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Guardar</button></div>'+
 		    '<h4 class="modal-title" id="myModalLabel'+valorActual.id+'">'+valorActual.title+'</h4></div>'+
-			'<div class="modal-body"><img class="img-modal" src="img/'+valorActual.image_url+'"></div><div class="modal-footer">'+'<p class="text-left">'+'<i class="fa fa-user-circle-o" aria-hidden="true"></i>'+valorActual.username+' | '+ '#'+valorActual.hashtag+'</p>'+'<h4 class="text-left">'+valorActual.description+
-			'</h4>'+'<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Guardar</button>'+"<br>"+'<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Leerlo</button></div></div></div></div>');
+			'<div class="modal-body"><img class="img-modal" src="img/'+valorActual.image_url+'"></div><div class="modal-footer">'+
+		    '<div class="modal-header"><div class="headermodal"><a href="#"><i class="fa fa-upload" aria-hidden="true"></i></a><a href="#"><i class="fa fa-check" aria-hidden="true"></i></a><a href="#"><i class="fa fa-ellipsis-h padding" aria-hidden="true"></i></a><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Guardar</button></div>'+
+		    '<p class="text-left">'+'<i class="fa fa-user-circle-o" aria-hidden="true"></i>'+valorActual.username+' | '+ '#'+valorActual.hashtag+'</p>'+'<h4 class="text-left">'+valorActual.description+
+			'</h4>'+"<br>"+'<button type="button" class="btn btn-primary leer" data-dismiss="modal">Leerlo</button></div></div></div></div>');
 });
 

@@ -10,3 +10,11 @@
     margin-right: 20px;
     cursor: pointer
 }
+
+
+@mixin guardar-modal{
+    background-color: #B7071B;
+    border: #B7071B;
+    margin-bottom: 17px;
+    margin-left: 0px;
+}
