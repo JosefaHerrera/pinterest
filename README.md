@@ -1,4 +1,4 @@
-##Requerimientos Técnicos
+#Requerimientos Técnicos<h1>
 
 **El proyecto fue realizado con las siguientes dependencias NPM:**
 
