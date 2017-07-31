@@ -35,7 +35,7 @@ body{
 }
 i{
 	color:$coloriconos;
-}
+ }
 }
 
 #ftos{
@@ -136,7 +136,7 @@ i{
 	.segundo{
 		i{
 			color: $coloriconos;
-			background-color: $blanco;
+			background-color: $coloriconos;
 			font-size: 30px;
 			padding-right: 10px;
 			padding-left: 0px;
@@ -150,19 +150,27 @@ i{
 		}
 	}
 	.leer{
-		background-color: $color-grey-text;
-		border: 1px solid $color-grey-text;
+		background-color: $coloriconos;
+		border: 1px solid $coloriconos;
 	}
-	.modal-header .headermodal .btn-primary {
+}
+.modal-header .headermodal .btn-primary {
     background-color: #B7071B;
     border: none;
     margin-left: 324px;
 }
 	.guardar{
 	@include guardar-modal();
-	}
 }
-
+.modal-body {
+    position: relative;
+    padding: 15px;
+    text-align: center;
+.img-modal{
+	width: 100%;
+	border-radius: 10px;
+}
+}
 
 
 //botones!

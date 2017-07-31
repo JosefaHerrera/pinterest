@@ -12630,6 +12630,7 @@ if (typeof jQuery === 'undefined') {
 
 }(jQuery);
 
+
 /*$(window).scroll(function() {
    if($(window).scrollTop() + window.innerHeight == $(document).height()) {
        alert("bottom!");
@@ -12653,18 +12654,60 @@ var pinter =[{"id":1,"title":"Fuke zisukje bu dibas sik.","description":"Jusola 
     	
     });*/
 
+/*
 //json con modal
 pinter.forEach(function(valorActual){
-	$('#ftos').append('<div class="contenedor co-md-4" type="button" data-toggle="modal" data-target="#myModal'+valorActual.id+'"><img class="img-responsive" src="img/'+
+	$('#ftos').append('<div class="contenedor co-md-4 animation-element" type="button" data-toggle="modal" data-target="#myModal'+valorActual.id+'"><img class="img-responsive" src="img/'+
 		valorActual.image_url+'"><h5>'+valorActual.title+'</h5><p>'+
 	 "<span><i class='fa fa-thumb-tack' aria-hidden='true'></i> 36,6k <i class='fa fa-check' aria-hidden='true'></i> 6</span>"+"<br>"+valorActual.description+'</p><p>'+'<i class="fa fa-user-circle-o" aria-hidden="true"></i>'+valorActual.username+' | '+' #'+
 		valorActual.hashtag+'</p></div><div class="modal fade" id="myModal'+valorActual.id+'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">'+
 			'<div class="modal-dialog" role="document"><div class="modal-content">'+
 		    '<div class="modal-header"><div class="headermodal"><a href="#"><i class="fa fa-upload" aria-hidden="true"></i></a><a href="#"><i class="fa fa-check" aria-hidden="true"></i></a><a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Guardar</button></div>'+
 		    '<h4 class="modal-title" id="myModalLabel'+valorActual.id+'">'+valorActual.title+'</h4></div>'+
-			'<div class="modal-body"><img class="img-modal" src="img/'+valorActual.image_url+'"></div><div class="modal-footer">'+
+			'<div class="modal-body"><img class="img-modal text-center" src="img/'+valorActual.image_url+'"></div><div class="modal-footer">'+
 		    '<div class="modal-header"><div class="headermodal"><a href="#"><i class="fa fa-upload" aria-hidden="true"></i></a><a href="#"><i class="fa fa-check" aria-hidden="true"></i></a><a href="#"><i class="fa fa-ellipsis-h padding" aria-hidden="true"></i></a><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Guardar</button></div>'+
 		    '<p class="text-left">'+'<i class="fa fa-user-circle-o" aria-hidden="true"></i>'+valorActual.username+' | '+ '#'+valorActual.hashtag+'</p>'+'<h4 class="text-left">'+valorActual.description+
 			'</h4>'+"<br>"+'<button type="button" class="btn btn-primary leer" data-dismiss="modal">Leerlo</button></div></div></div></div>');
-});
+});*/
 
+
+
+
+var sumar=0;
+
+$(document).ready(function(){
+	for (var x=0; x<20; x++){
+		$('#ftos').append('<div class="contenedor co-md-4 animation-element" type="button" data-toggle="modal" data-target="#myModal'+pinter[x].id+'"><img class="img-responsive" src="img/'+
+		pinter[x].image_url+'"><h5>'+pinter[x].title+'</h5><p>'+
+	 "<span><i class='fa fa-thumb-tack' aria-hidden='true'></i> 36,6k <i class='fa fa-check' aria-hidden='true'></i> 6</span>"+"<br>"+pinter[x].description+'</p><p>'+'<i class="fa fa-user-circle-o" aria-hidden="true"></i>'+pinter[x].username+' | '+' #'+
+		pinter[x].hashtag+'</p></div><div class="modal fade" id="myModal'+pinter[x].id+'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">'+
+			'<div class="modal-dialog" role="document"><div class="modal-content">'+
+		    '<div class="modal-header"><div class="headermodal"><a href="#"><i class="fa fa-upload" aria-hidden="true"></i></a><a href="#"><i class="fa fa-check" aria-hidden="true"></i></a><a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Guardar</button></div>'+
+		    '<h4 class="modal-title" id="myModalLabel'+pinter[x].id+'">'+pinter.title+'</h4></div>'+
+			'<div class="modal-body"><img class="img-modal text-center" src="img/'+pinter[x].image_url+'"></div><div class="modal-footer">'+
+		    '<div class="modal-header"><div class="headermodal"><a href="#"><i class="fa fa-upload" aria-hidden="true"></i></a><a href="#"><i class="fa fa-check" aria-hidden="true"></i></a><a href="#"><i class="fa fa-ellipsis-h padding" aria-hidden="true"></i></a><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Guardar</button></div>'+
+		    '<p class="text-left">'+'<i class="fa fa-user-circle-o" aria-hidden="true"></i>'+pinter[x].username+' | '+ '#'+pinter[x].hashtag+'</p>'+'<h4 class="text-left">'+pinter[x].description+
+			'</h4>'+"<br>"+'<button type="button" class="btn btn-primary leer" data-dismiss="modal">Leerlo</button></div></div></div></div>');
+	}
+ $(window).scroll(function(){
+ if ($(window).scrollTop() + $(window).height() == $(document).height()){
+ 	 if (sumar == 20) {
+        return;
+        }
+	for (var x=20; x<40; x++){
+		$('#ftos').append('<div class="contenedor co-md-4 animation-element" type="button" data-toggle="modal" data-target="#myModal'+pinter[x].id+'"><img class="img-responsive" src="img/'+
+		pinter[x].image_url+'"><h5>'+pinter[x].title+'</h5><p>'+
+	 "<span><i class='fa fa-thumb-tack' aria-hidden='true'></i> 36,6k <i class='fa fa-check' aria-hidden='true'></i> 6</span>"+"<br>"+pinter[x].description+'</p><p>'+'<i class="fa fa-user-circle-o" aria-hidden="true"></i>'+pinter[x].username+' | '+' #'+
+		pinter[x].hashtag+'</p></div><div class="modal fade" id="myModal'+pinter[x].id+'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">'+
+			'<div class="modal-dialog" role="document"><div class="modal-content">'+
+		    '<div class="modal-header"><div class="headermodal"><a href="#"><i class="fa fa-upload" aria-hidden="true"></i></a><a href="#"><i class="fa fa-check" aria-hidden="true"></i></a><a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Guardar</button></div>'+
+		    '<h4 class="modal-title" id="myModalLabel'+pinter[x].id+'">'+pinter.title+'</h4></div>'+
+			'<div class="modal-body"><img class="img-modal text-center" src="img/'+pinter[x].image_url+'"></div><div class="modal-footer">'+
+		    '<div class="modal-header"><div class="headermodal"><a href="#"><i class="fa fa-upload" aria-hidden="true"></i></a><a href="#"><i class="fa fa-check" aria-hidden="true"></i></a><a href="#"><i class="fa fa-ellipsis-h padding" aria-hidden="true"></i></a><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Guardar</button></div>'+
+		    '<p class="text-left">'+'<i class="fa fa-user-circle-o" aria-hidden="true"></i>'+pinter[x].username+' | '+ '#'+pinter[x].hashtag+'</p>'+'<h4 class="text-left">'+pinter[x].description+
+			'</h4>'+"<br>"+'<button type="button" class="btn btn-primary leer" data-dismiss="modal">Leerlo</button></div></div></div></div>');
+		sumar++;
+	}
+  }
+ });
+});
