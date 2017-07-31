@@ -41,9 +41,6 @@ pinter.forEach(function(valorActual){
 			'</h4>'+"<br>"+'<button type="button" class="btn btn-primary leer" data-dismiss="modal">Leerlo</button></div></div></div></div>');
 });*/
 
-
-
-
 var contador=0;
 
 $(document).ready(function(){
