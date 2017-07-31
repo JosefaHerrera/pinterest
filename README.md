@@ -1,8 +1,8 @@
-**Requerimientos Técnicos
+**Requerimientos Técnicos**
 
-**El proyecto fue realizado con las siguientes dependencias NPM:
+**El proyecto fue realizado con las siguientes dependencias NPM:**
 
-*Dependencias de Desarrollo
+*Dependencias de Desarrollo*
 
 $Gulp ~v.3.9.1
 $Gulp-Concat ~v.2.6.1
